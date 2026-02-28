@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Emporium | Curated Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#001F3F',
+                        gold: '#D4AF37',
+                        alabaster: '#F2F2F2',
+                        charcoal: '#333333',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #F2F2F2; font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
+        .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #F2F2F2 100%); }
+        .hero-overlay { background: rgba(0, 31, 63, 0.6); }
+    </style>
+</head>
+<body class="text-charcoal">
+
+    <div class="bg-gold text-navy text-[10px] tracking-[0.2em] py-2 text-center font-bold uppercase">
+        Complimentary White-Glove Delivery on Orders Over ₦250,000
+    </div>
+
+    <nav class="bg-white border-b border-alabaster sticky top-0 z-50 px-8 py-6 flex justify-between items-center">
+        <div class="flex space-x-6 text-[10px] uppercase tracking-widest font-semibold hidden lg:flex">
+            <a href="#collection" class="hover:text-gold transition">The Collection</a>
+            <a href="#about" class="hover:text-gold transition">Our Story</a>
+        </div>
+        <h1 class="text-3xl font-serif text-navy tracking-tighter">THE <span class="text-gold italic">GRAND</span> EMPORIUM</h1>
+        <div class="flex space-x-6 text-[10px] uppercase tracking-widest font-semibold">
+            <a href="#" class="hover:text-gold transition">Search</a>
+            <a href="#" class="hover:text-gold transition">Cart (0)</a>
+        </div>
+    </nav>
+
+    <section class="relative h-[80vh] flex items-center justify-center text-center text-white overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1920&q=80" class="absolute inset-0 w-full h-full object-cover" alt="Luxury Interior">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 max-w-3xl px-6">
+            <h2 class="text-5xl md:text-7xl font-serif mb-6 leading-tight">Timeless Quality.<br>Curated for the Modern Lifestyle.</h2>
+            <p class="text-lg mb-8 font-light tracking-wide opacity-90">Welcome to The Grand Emporium, where elegance meets everyday utility. Discover the finer things in life—delivered directly to your door.</p>
+            <a href="#collection" class="inline-block bg-gold text-navy px-10 py-4 text-xs font-bold uppercase tracking-[0.3em] hover:bg-white transition-colors duration-300">Shop the Collection</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-gold font-bold tracking-[0.4em] text-[10px] uppercase">Our Heritage, Your Future</span>
+                    <h2 class="text-4xl font-serif text-navy mt-4 mb-6">At The Grand Emporium, we believe items should tell a story.</h2>
+                    <p class="text-charcoal leading-relaxed mb-6 font-light">In a world of "fast fashion" and disposable goods, we stand for something different: <strong>Permanence.</strong> Every item in our catalog undergoes a rigorous selection process.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <span class="text-gold text-2xl">✦</span>
+                            <p class="text-sm tracking-wide uppercase font-semibold">Curated Excellence</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <span class="text-gold text-2xl">✦</span>
+                            <p class="text-sm tracking-wide uppercase font-semibold">White-Glove Service</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <span class="text-gold text-2xl">✦</span>
+                            <p class="text-sm tracking-wide uppercase font-semibold">The Grand Guarantee</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 italic font-serif text-2xl text-navy opacity-60">The Founder</div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1491336477066-31156b5e4f35?auto=format&fit=crop&w=800&q=80" class="shadow-2xl" alt="Founder Style">
+                    <div class="absolute -bottom-6 -left-6 bg-gold p-8 hidden md:block">
+                        <p class="text-navy font-bold text-xs uppercase tracking-widest">Est. 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="collection" class="py-20 bg-alabaster">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif text-navy italic">The Essentials</h2>
+                <div class="h-1 w-20 bg-gold mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10" id="product-grid">
+                </div>
+        </div>
+    </section>
+
+    <section class="bg-navy py-20 text-center text-white">
+        <div class="max-w-xl mx-auto px-6">
+            <h2 class="text-3xl font-serif mb-4 italic text-gold">Join the Inner Circle</h2>
+            <p class="text-xs uppercase tracking-[0.2em] mb-8 opacity-70">Receive the Emporium Gazette & Exclusive Early Access</p>
+            <form class="flex flex-col md:flex-row gap-4">
+                <input type="email" placeholder="Your Email Address" class="flex-grow bg-transparent border-b border-gold py-2 outline-none text-sm placeholder:text-gray-500">
+                <button class="bg-gold text-navy px-8 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-white transition">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-charcoal text-alabaster py-12 px-6">
+        <div class="container mx-auto grid md:grid-cols-3 gap-12 text-center md:text-left">
+            <div>
+                <h3 class="font-serif text-xl text-gold mb-4">The Grand Emporium</h3>
+                <p class="text-xs leading-loose opacity-60 uppercase tracking-widest">Quality. Integrity. Service.</p>
+            </div>
+            <div class="text-[10px] uppercase tracking-[0.3em] space-y-4">
+                <a href="#" class="block hover:text-gold">Privacy Policy</a>
+                <a href="#" class="block hover:text-gold">Shipping & Returns</a>
+                <a href="#" class="block hover:text-gold">Contact Us</a>
+            </div>
+            <div class="text-[10px] uppercase tracking-[0.2em] opacity-50">
+                © 2026 THE GRAND EMPORIUM NIGERIA.<br>All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const products = [
+            { name: "Luxury Scented Soy Candle", price: "₦25,000", img: "https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?auto=format&fit=crop&w=500&q=80" },
+            { name: "Egyptian Cotton Bedding", price: "₦120,000", img: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=500&q=80" },
+            { name: "Minimalist Ceramic Coffee Set", price: "₦45,000", img: "https://images.unsplash.com/photo-1517133194598-d3957a772c6c?auto=format&fit=crop&w=500&q=80" },
+            { name: "Smart Ambient Table Lamp", price: "₦55,000", img: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=500&q=80" },
+            { name: "Velvet Throw Pillow (Set of 2)", price: "₦18,500", img: "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=500&q=80" },
+            { name: "Genuine Leather Wallet", price: "₦22,000", img: "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=500&q=80" },
+            { name: "Stainless Chronograph Watch", price: "₦85,000", img: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=500&q=80" },
+            { name: "Silk Necktie", price: "₦15,000", img: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=500&q=80" },
+            { name: "Premium Polarized Sunglasses", price: "₦35,000", img: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=500&q=80" },
+            { name: "Hard-Shell Carry-On", price: "₦95,000", img: "https://images.unsplash.com/photo-1565026073747-483e93a0c5bb?auto=format&fit=crop&w=500&q=80" },
+            { name: "Noise-Canceling Headphones", price: "₦180,000", img: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" },
+            { name: "Portable Power Bank", price: "₦30,000", img: "https://images.unsplash.com/photo-1609091839697-5c1411b4cf00?auto=format&fit=crop&w=500&q=80" },
+            { name: "Wooden Desktop Organizer", price: "₦12,000", img: "https://images.unsplash.com/photo-1591129841117-3adfd313e34f?auto=format&fit=crop&w=500&q=80" },
+            { name: "Mechanical Backlit Keyboard", price: "₦65,000", img: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=500&q=80" },
+            { name: "Smart Coffee Mug", price: "₦40,000", img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" },
+            { name: "Organic Skincare Gift Set", price: "₦45,000", img: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=500&q=80" },
+            { name: "Insulated Water Flask", price: "₦12,500", img: "https://images.unsplash.com/photo-1602143307185-84e674392797?auto=format&fit=crop&w=500&q=80" },
+            { name: "Premium Yoga Mat", price: "₦28,000", img: "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?auto=format&fit=crop&w=500&q=80" },
+            { name: "Artisan Tea Infuser Set", price: "₦18,000", img: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=500&q=80" },
+            { name: "Electric Facial Massager", price: "₦35,000", img: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=500&q=80" }
+        ];
+
+        const grid = document.getElementById('product-grid');
+        products.forEach(p => {
+            grid.innerHTML += `
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden bg-white aspect-[3/4] mb-4">
+                        <img src="${p.img}" alt="${p.name}" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                        <div class="absolute bottom-0 left-0 right-0 bg-navy bg-opacity-0 group-hover:bg-opacity-90 transition-all p-4">
+                            <button class="w-full text-white text-[10px] uppercase font-bold tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">Add to Cart</button>
+                        </div>
+                    </div>
+                    <h3 class="text-xs font-semibold uppercase tracking-widest text-navy truncate">${p.name}</h3>
+                    <p class="text-gold mt-1 font-serif italic">${p.price}</p>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>
